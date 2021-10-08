@@ -1,0 +1,87 @@
+@import "./global.css";
+
+.find-search-bar-form{
+    padding: 0 25px; /*검색바 간격조정*/
+}
+
+.find-search-bar-form div {
+    width: 100% ; /*검색바 길이 조정*/
+}
+
+.find-search-bar {
+    margin-top: 50px; /*검색바 윗 간격 조절 */
+    background-color: var(--darkpurple);
+    border-radius: 25px;
+    width: 100%; /* 검색바 길이 조정 */
+    padding: 10px;
+    color: white; /* 입력시 글씨 하얗게 */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.find-search-bar:focus {
+    background-color: #594374;
+}
+
+.find-search-bar-form span{
+    position: absolute; /*relative를 기준으로 위치 조정*/
+    font: 1rem;
+    bottom: 0.3rem;
+    right: 25px; /*오른쪽으로부터 25px 떨어짐*/
+}
+
+
+.suggest-img__container {
+    padding: 0 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.suggest-img {
+    width: 22rem;
+    height: 12rem;
+    border-radius: 25px;
+}
+
+.suggest-img__container span {
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 50%;
+    left: calc(50% + 5rem); /*화면 크기가 바뀔 때 일정한 위치를 유지시켜주는 함수*/
+    font-size: 5rem;
+    bottom: 3.2rem;
+}
+
+.suggset-page__title {
+    padding-left: 25px;
+}
+
+.suggest-page__promotion-text {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.suggest-page__movie-name {
+    color: var(--purple);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.video-recommendation {
+    margin: 25px 0;
+    padding: 0 25px;
+}
+
+.video-recommendation__images {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    overflow-x: scroll;
+}
+.video-recommendation__images li {
+    margin-left: 5px;
+}
+.video-recommendation__images img {
+    width:150px;
+    border-radius: 15px;
+}
